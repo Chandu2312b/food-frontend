@@ -8,7 +8,9 @@ const StoreContextProvider = (props) => {
   // It provides the food_list to the rest of the application
 
   const [cartItems, setCartItems] = useState({});
-  const url ="http://localhost:4000"
+  // const url ="http://localhost:4000"
+   const url = import.meta.env.VITE_SERVER_URL;  
+   
   const [token,setToken] = useState("");
   const [food_list,setFoodList] =useState([])
 
