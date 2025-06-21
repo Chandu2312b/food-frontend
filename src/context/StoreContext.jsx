@@ -9,8 +9,9 @@ const StoreContextProvider = (props) => {
 
   const [cartItems, setCartItems] = useState({});
   // const url ="http://localhost:4000"
-   const url = import.meta.env.VITE_SERVER_URL;  
-   
+   const url = process.env.REACT_APP_BASE_URL || "http://localhost:4000";
+
+
   const [token,setToken] = useState("");
   const [food_list,setFoodList] =useState([])
 
