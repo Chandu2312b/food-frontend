@@ -1,0 +1,15 @@
+.server-message {
+  text-align: center;
+  padding: 15px;
+  background-color: #fff3cd;
+  color: #856404;
+  border-radius: 8px;
+  margin: 15px;
+  font-weight: 500;
+}
+
+.server-message span {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+}
