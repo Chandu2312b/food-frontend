@@ -28,7 +28,7 @@ import AppDownload from '../../components/AppDownload/AppDownload'
 
 const Home = () => {
   const [category, setCategory] = useState("All")
-  const [timeLeft, setTimeLeft] = useState(60)
+  const [timeLeft, setTimeLeft] = useState(55)
   const [showMessage, setShowMessage] = useState(true)
 
   useEffect(() => {
@@ -54,7 +54,7 @@ const Home = () => {
 
       {showMessage && (
         <div className="server-message">
-          <p>Just wait a while, the server is rendering</p>
+          <p>Just wait a while, the food is preparing</p>
           <span>Loading… {timeLeft}s</span>
         </div>
       )}
